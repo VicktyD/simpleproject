@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: whitesmoke;
+}
+
+
+/* body navigate by */
+.navigate{
+  background: white;
+  width: 100%;
+  z-index: 99;
+  filter: drop-shadow(0 0 10px grey);
+}
+.logo{
+  width: 25%;
+  margin: 10px 0 0 20px; 
+  cursor: pointer;
+}
+
+/* body main on */
+.onMenu1{
+  padding: 20px;
+  text-align: center;
+}
+.onMenu1 button{
+  color: white;
+  background: linear-gradient(120deg, mediumslateblue, darkslateblue);
+  border: 2px solid black;
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin: 40px;
+  cursor: pointer;
+}
+
+.footer{
+  text-align: center;
+}
+
+.class1,
+.class2,
+.class3{
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  filter: drop-shadow(0 0 5px grey);
+}
+
+
+.jsLogo,
+.htmlLogo,
+.cssLogo{
+  margin: 20px 0 20px;
+  width: 20%;
+}
+
+.title{
+  text-align: center;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  filter: drop-shadow(0 0 10px grey);
+}
+.soalan{
+  text-align: left;
+  background: white;
+  padding: 30px 5px;
+  margin: 20px;
+  filter: drop-shadow(0 0 10px grey);
+}
+.displayNo{
+  margin: 0 0 50px;
+}
+
+.buttonSubOn{
+  text-decoration: none;
+  background: cadetblue;
+  padding: 10px 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+.buttonSub{
+  text-decoration: none;
+  background: grey;
+  padding: 10px 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+}
+
+.displayYes:checked ~ .buttonSub{
+  display: none;
+}
+.displayYes:checked ~ .buttonSubOn{
+  display: block;
+}
+.displayNo:checked ~ .buttonSub{
+  display: block;
+}
+.displayNo:checked ~ .buttonSubOn{
+  display: none;
+}
